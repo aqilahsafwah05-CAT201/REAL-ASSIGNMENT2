@@ -12,8 +12,8 @@ const Hero = () => {
             <span className="title-sub">Tech</span>
           </h1>
           <p className="hero-description">
-            Transforming businesses through innovative technology solutions. 
-            We deliver cutting-edge software development, AI integration, and digital transformation services.
+            Elevating businesses and experiences through cutting-edge, innovative technology solutions.
+            We deliver outstanding and professional IT services for everyone.
           </p>
           <div className="hero-buttons">
             <a href="#services" className="btn btn-primary">

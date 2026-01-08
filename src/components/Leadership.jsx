@@ -1,26 +1,31 @@
 import React from 'react'
 import './Leadership.css'
+import arinahImg from '../image/arinah.png';
+import haidaImg from '../image/haida.png';
+import aqilahImg from '../image/aqilah.jpeg';
+import vidBg from '../image/video.mp4';
+
 
 const Leadership = () => {
   const leaders = [
     {
       name: "Syarifah Nurul Aqilah Safwah binti Syed Mohd Asri",
       position: "Chief Executive Officer",
-      image: "https://images.pexels.com/photos/7640798/pexels-photo-7640798.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      bio: "15+ years of experience in technology leadership and business strategy.",
+      image: aqilahImg,
+      bio: "7+ years of experience in technology leadership and business strategy.",
       skills: ["Strategic Planning", "Team Leadership", "Business Development"]
     },
     {
       name: "Puteri Arinah binti Sahimi",
       position: "Chief Technology Officer",
-      image: "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      bio: "Expert in software architecture and emerging technologies with 12+ years experience.",
+      image: arinahImg,
+      bio: "Expert in software architecture and emerging technologies with 8+ years experience.",
       skills: ["Software Architecture", "AI/ML", "Cloud Computing"]
     },
     {
       name: "Siti Haida binti Nasir",
       position: "Head of Operations",
-      image: "https://images.pexels.com/photos/7793142/pexels-photo-7793142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      image: haidaImg,
       bio: "Operations specialist focused on process optimization and client success.",
       skills: ["Project Management", "Process Optimization", "Client Relations"]
     }
@@ -51,7 +56,7 @@ const Leadership = () => {
                   src={leader.image} 
                   alt={leader.name}
                   width="975"
-                  height="650"
+                  height="750"
                 />
               </div>
               <div className="leader-info">
@@ -68,23 +73,17 @@ const Leadership = () => {
           ))}
         </div>
 
-        <div className="capabilities-section">
-          <h3 className="capabilities-title">Team Capabilities</h3>
-          <div className="capabilities-grid">
-            {capabilities.map((capability, index) => (
-              <div key={index} className="capability-item">
-                <div className="capability-header">
-                  <span className="capability-name">{capability.name}</span>
-                  <span className="capability-percentage">{capability.percentage}%</span>
-                </div>
-                <div className="capability-bar">
-                  <div 
-                    className="capability-fill" 
-                    style={{ width: `${capability.percentage}%` }}
-                  ></div>
-                </div>
+        <div className="video-section">
+          <h3 className="video-title">Let's Watch Video!</h3>
+          <div className="video-grid">
+              <div className="video-image">
+                  <video
+                      src={vidBg}
+                      controls
+                      preload="metadata">
+                  >
+                  </video>
               </div>
-            ))}
           </div>
         </div>
       </div>

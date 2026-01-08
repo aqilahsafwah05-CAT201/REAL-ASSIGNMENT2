@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import companylogo from '../image/FullLogo_Transparent.png'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Visit Us",
-      details: ["123 Tech Street", "Innovation District", "San Francisco, CA 94105"]
+      details: ["325 Jalan Danau 8", "Taman Jaya", "81100 Johor Bahru, Johor"]
     },
     {
       icon: (
@@ -42,7 +43,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"]
+      details: ["+60 3-2522 0801", "+60 19-716 3376", "+60 17-760 9827", "+60 11-2588 6411"]
     },
     {
       icon: (
@@ -52,7 +53,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Email Us",
-      details: ["hello@ahamazingtech.com", "support@ahamazingtech.com"]
+      details: ["ahamazingtech@gmail.com", "ahamazingtechsupport@gmail.com"]
     }
   ]
 
@@ -62,7 +63,7 @@ const Contact = () => {
         <div className="section-header">
           <h2 className="section-title">Let's Connect</h2>
           <p className="section-description">
-            Ready to transform your business with innovative technology? Get in touch with our team today.
+            Ready to transform your business? Get in touch with our team today.
           </p>
         </div>
 
@@ -147,8 +148,7 @@ const Contact = () => {
 
             <div className="contact-image">
               <img 
-                src="https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="Two business professionals engaging in a team meeting in a modern London office with a large window view"
+                src= {companylogo}
                 width="975"
                 height="650"
               />

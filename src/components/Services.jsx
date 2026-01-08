@@ -63,9 +63,9 @@ const Services = () => {
     <section id="services" className="services section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Services & Solutions</h2>
+          <h2 className="section-title">Services</h2>
           <p className="section-description">
-            We provide comprehensive technology solutions tailored to your business needs
+            Comprehensive technology solutions tailored to your needs.
           </p>
         </div>
         
@@ -78,7 +78,7 @@ const Services = () => {
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
               <a href="#contact" className="service-link">
-                Learn More
+                Book Now
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>

@@ -1,5 +1,5 @@
 .leadership {
-  background: #f8fafc;
+    background: linear-gradient(135deg, #ADD8E6 0%,  #89CFF0 100%);
 }
 
 .leadership-grid {
@@ -44,6 +44,8 @@
 }
 
 .leader-name {
+    align-items: center;
+    justify-content: center;
   font-size: 1.5rem;
   font-weight: 600;
   color: #1a202c;
@@ -78,14 +80,14 @@
   font-weight: 500;
 }
 
-.capabilities-section {
+.video-section {
   background: white;
   padding: 60px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.capabilities-title {
+.video-title {
   font-size: 2rem;
   font-weight: 600;
   color: #1a202c;
@@ -93,48 +95,26 @@
   margin-bottom: 40px;
 }
 
-.capabilities-grid {
-  display: grid;
-  gap: 32px;
-  max-width: 800px;
-  margin: 0 auto;
+.video-grid {
+    display: grid;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.capability-item {
-  background: #f8fafc;
-  padding: 24px;
-  border-radius: 12px;
+.video-image {
+    /* Use flexbox to center the video child */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.capability-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.capability-name {
-  font-weight: 500;
-  color: #1a202c;
-}
-
-.capability-percentage {
-  font-weight: 600;
-  color: #667eea;
-}
-
-.capability-bar {
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.capability-fill {
-  height: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 4px;
-  transition: width 1s ease-in-out;
+video {
+    /* Give the video a maximum width so it stays responsive */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: matches your container vibe */
 }
 
 @media (max-width: 768px) {
@@ -148,15 +128,12 @@
     padding: 24px;
   }
 
-  .capabilities-section {
-    padding: 40px 24px;
+  .video-section {
+    padding: 24px;
   }
 
-  .capabilities-title {
+  .video-title {
     font-size: 1.75rem;
   }
 
-  .capability-item {
-    padding: 20px;
-  }
 }
